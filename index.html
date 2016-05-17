@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>(Co)DIGO Bootcamp </title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/simple-sidebar.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!-- Sidebar -->
+        <div id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <li class="sidebar-brand">
+                    <a href="#">
+                        (Co)DIGO Bootcamp 
+                    </a>
+                </li>
+                <li>
+                    <a href="#funciones-js">Funciones JS</a>
+                </li>
+                <li>
+                    <a href="#">Arreglos JS</a>
+                </li>
+                <li>
+                    <a href="#">Iteradores JS</a>
+                </li>
+                <li>
+                    <a href="#">DOM</a>
+                </li>
+                <li>
+                    <a href="#">Jazmine</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /#sidebar-wrapper -->
+
+        <!-- Page Content -->
+        <div id="page-content-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1 id="funciones-js">Funciones JS</h1>
+                        <p>Una funcion es un bloque de codigo que se ejecuta cuando lo llamamos. Una funcion tiene un numero de entradas dependiendo del problema a resolver que se usaran dentro de dicho bloque de codigo para solucionar un problema en particular. Tambien puede tene una salida con la solucion al problema en cuestion.</p>
+                        <h3>Definicion de una funcion</h3>
+                        <p>Una funcion se puede almacenar en una variable de la siguiente manera:</p>
+                        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #AA22FF; font-weight: bold">var</span> miFuncion<span style="color: #666666">=</span> <span style="color: #AA22FF; font-weight: bold">function</span>(entrada1,entrada2)
+{
+
+}
+</pre></div>
+
+ 
+                        <p>Este caso nuestra funcion se llama <b>miFuncion</b> y tiene como entradas <b>entrada1</b> y <b>entrada2.</b></p>
+                        <h3>Cuerpo de una funcion</h3>
+                        <p>Hasta el momento nuestra funcion no tiene ningun proposito. El cuerpo de una funcion es el bloque de codigo que queremos que se ejecute cuando vayamos a usarla.</p>
+                        <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #AA22FF; font-weight: bold">var</span> areaRectangulo<span style="color: #666666">=</span> <span style="color: #AA22FF; font-weight: bold">function</span>(ancho,alto){
+    <span style="color: #AA22FF; font-weight: bold">return</span> ancho<span style="color: #666666">*</span>alto;
+}
+</pre></div>
+
+                        
+                        <p>Esta funcion llamada <b>areaRectangulo</b> tiene como entradas (tambien llamamdas argumentos o parametros) el alto y el ancho de un ractangulo y en el cuerpo de la funcion hacemos los calculos pertinentes y retornamos el area con la palabra reservada de JavaScript <b>return</b>. El cuerpo de una funcion esta delimitado entonces por las llaves {}</p>
+                        <h3>Llamados a funciones</h3>
+                        <p>Hasta el momentos hemos definido nuestra funcion. Si ejecutamos este codigo no tendremos ningun error. Sin embargo hasta el momento no hemos hecho uso de la funcion, simplemente la hemos definido. Esto quiere decir que hasta el momento Javascript ha leido nuestro codigo y sabe que existe dicha funcion pero no ha visto ninguna ejecucion de la misma. Para lograr esto tenemos que hacer uso de ella o "llamarla".</p>
+<!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #AA22FF; font-weight: bold">var</span> lado1<span style="color: #666666">=3</span>;
+<span style="color: #AA22FF; font-weight: bold">var</span> lado2<span style="color: #666666">=5</span>;
+<span style="color: #AA22FF; font-weight: bold">var</span> area;
+area<span style="color: #666666">=</span> areaRectangulo(lado1,lado2);
+console.log(area);
+<span style="color: #008800; font-style: italic">//en la consola se imprimira 15</span>
+</pre></div>
+                        
+                        <ol>
+                            <li>Creamos 2 variables donde tendremos el tamanio de cada lado respectivamente.</li>
+                            <li>Declaramos una tercera variable donde almacenaremos el area de nuestro rectangulo</li>
+                            <li>A la variable <b>area</b> le asignamos el valor retornado por la funcion <b>areaRectangulo</b> LLAMANDO a la funcion <b>areaRectangulo</b> insertando <b>lado1</b> y <b>lado2</b> como entrada o parametros</li>
+                            <li>Imprimimos por consola el resultado</li>
+                        </ol>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Arreglos JS</h1>
+                        <h3>Que es un arreglo?</h3>
+                        <p>Hasta el momento hemos declarado variables donde podemos almacenar un solo dato en dicha variable. Sin embargo nos encontraremos en la necesidad de guardar varios datos en una sola variable para poder manejarlos despues. Para estas situaciones usaremos <b>arreglos</b> o <b>arrays</b> para hacer frente a esta situacion</p>
+                        <h3>Declaracion de arreglos</h3>
+                        <p>Para crear un arreglo vacio basta con asignar a cualquier variable parentesis cuadrados<b>[]</b></p>
+                        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #AA22FF; font-weight: bold">var</span> arreglo <span style="color: #666666">=</span> [];
+</pre></div>
+
+                        <p>Si queremos crear un arreglo y agregarle elementos al mismo tiempo podemos hacerlo de la siguiente manera:</p>
+                        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #AA22FF; font-weight: bold">var</span> arreglo <span style="color: #666666">=</span> [<span style="color: #BB4444">&quot;papaya&quot;</span>,<span style="color: #BB4444">&quot;mango&quot;</span>,<span style="color: #BB4444">&quot;naranja&quot;</span>];
+</pre></div>
+
+                        <p>Es importante recalcar que los arreglos pueden contener CUALQUIER de dato incluso otro arreglo</p>
+                        <h3>Acceso a elementos de un arreglo</h3>
+                        <p>Al tener un arreglo creado y con elementos es logico que en algun momento de nuestro programa queramos acceder a ellos. Antes de entrar en detalle acerca de como acceder a un elemento de un arreglo primero es importante entender los terminos que lo componen.</p>
+                        <ul>
+                            <li><b>tamanio</b>: El numero total de elementos que tiene el arreglo</li>
+                            <li><b>indice</b>: Es la posicion en la cual esta un elemento en el arreglo contando desde 0 en la primera posicion</li>
+                        </ul>
+                        <div><img src="images/arreglo_concepto.png" alt="" class="img-responsive" style="margin:0 auto;"></div>
+                        <div class="alert alert-warning" role="alert">
+                            <p><strong>Importante! </strong>Es importante tener en cuenta la diferencia entre indice y tamanio! El numero total de indices de un arreglo es el tamanio del arreglo menos 1. ej: Si el tamanio del arreglo es 10 las posiciones posiblee en dicho arreglo van de <b>0 a 9</b>. </p>
+                        </div>
+                        <p>Ahora si retomamos nuestro ejemplo de arreglo de frutas este tiene un tamanio de 3 por lo que las posiciones posibles en las cuales podemos situarnos en el arreglo es de <b>0 a 2</b>. La posicion 0 del arreglo corresponde a la palabra papaya, la posicion 1 a la palabra mango y la posicion 2 a la palabra naranja.</p>
+                        <p>Para acceder a uno de estos elementos lo hacemos a traves de su indice de la siguiente manera:</p>
+                        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #AA22FF; font-weight: bold">var</span> arreglo <span style="color: #666666">=</span> [<span style="color: #BB4444">&quot;papaya&quot;</span>,<span style="color: #BB4444">&quot;mango&quot;</span>,<span style="color: #BB4444">&quot;naranja&quot;</span>];
+<span style="color: #AA22FF; font-weight: bold">var</span> fruta <span style="color: #666666">=</span> arreglo[<span style="color: #666666">0</span>];
+console.log(fruta);
+<span style="color: #008800; font-style: italic">//imprime papaya</span>
+fruta <span style="color: #666666">=</span> arreglo[<span style="color: #666666">1</span>];
+console.log(fruta);
+<span style="color: #008800; font-style: italic">//imprime mango</span>
+fruta <span style="color: #666666">=</span> arreglo[<span style="color: #666666">2</span>]
+console.log(fruta);
+<span style="color: #008800; font-style: italic">//imprime naranja</span>
+</pre></div>
+                    <br/>
+                        <p>Lo que hicimos fue declarar una variable nueva llamada <b>fruta</b> y le asignamos el valor de <b>arreglo en el indice demarcado por []</b>.</p>
+                
+                    <h3>Agregar elementos a un arreglo</h3>
+                    <p>Para agregar elementos a un arreglo, JS tiene funciones que nos permiten realizar esta operacion facilmente. Entre estas se encuentra la funcion <b>push</b> que agrega un elemento al principio del arreglo.</p>
+                    <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #AA22FF; font-weight: bold">var</span> arreglo <span style="color: #666666">=</span> [<span style="color: #BB4444">&quot;papaya&quot;</span>,<span style="color: #BB4444">&quot;mango&quot;</span>,<span style="color: #BB4444">&quot;naranja&quot;</span>];
+arreglo.push(<span style="color: #BB4444">&quot;manzana&quot;</span>);
+console.log(arreglo);
+<span style="color: #008800; font-style: italic">// arreglo es ahora [&quot;papaya&quot;,&quot;mango&quot;,&quot;naranja&quot;,&quot;manzana&quot;]</span>
+</pre></div>
+
+                    <h3>Eliminar elementos de un arreglo</h3>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Iteradores </h1>
+                        <h3>Concepto</h3>
+                        <p>Hay veces que requerimos que nuestro codigo se ejecute varias veces para hacer la misma operación. Por ejemplo, si estamos manjenado nuestro arreglo de frutas y queremos imprimir el nombre de dicha fruta tendríamos que hacer los siguiente:</p>
+                        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #AA22FF; font-weight: bold">var</span> arreglo <span style="color: #666666">=</span> [<span style="color: #BB4444">&quot;papaya&quot;</span>,<span style="color: #BB4444">&quot;mango&quot;</span>,<span style="color: #BB4444">&quot;naranja&quot;</span>];
+console.log(arrglo[<span style="color: #666666">0</span>]);
+console.log(arrglo[<span style="color: #666666">1</span>]);
+console.log(arrglo[<span style="color: #666666">2</span>]);
+</pre></div>
+
+                        <p>Ahora qué pasaría si nuestro arreglo no tuiera simplemente 3 frutos sino cientos de ella? Sería bastante dispendioso escribir la misma operación cientos de veces. Aqui es donde los iteradores facilitan bastante la vida del programador. Si usamos iteradores para para el ejemplo anterior tendríamos lo siguiente:</p>
+                        <!-- HTML generated using hilite.me --><div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #AA22FF; font-weight: bold">var</span> arreglo <span style="color: #666666">=</span> [<span style="color: #BB4444">&quot;papaya&quot;</span>,<span style="color: #BB4444">&quot;mango&quot;</span>,<span style="color: #BB4444">&quot;naranja&quot;</span>];
+<span style="color: #AA22FF; font-weight: bold">for</span>(<span style="color: #AA22FF; font-weight: bold">var</span> i <span style="color: #666666">=</span> <span style="color: #666666">0</span>;i<span style="color: #666666">&lt;</span>arreglo.length;i<span style="color: #666666">++</span>){
+   console.log(arreglo[i]);
+}
+</pre></div>
+                    <p>Básicamente lo que estamos haciendo con este código en palabras informales es:</p>
+                    <blockquote>
+                        <p>"Empezando desde 0 hasta el final del arreglo, tome cada elemento e imprímalo"</p>
+                    </blockquote>
+                    </div>
+                    <h3>Definición</h3>
+                    <p></p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>DOM</h1>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h1>Jazmine</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /#page-content-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+</body>
+
+</html>
